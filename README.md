@@ -23,6 +23,7 @@ Our application is doing the following
 - Spring boot
 - Spring data
 - Service Registry
+- Cloud gateway
 - Config Server
 - Hystrix 
 - In-memory DB (**H2 DB**)
