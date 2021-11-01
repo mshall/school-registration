@@ -1,0 +1,197 @@
+{
+	"info": {
+		"_postman_id": "bd294655-7a9c-468f-a297-ce2745119ac3",
+		"name": "School-Registration",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Add a new course - Direct",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"courseName\":\"First course\",\n    \"courseCode\":\"First code\",\n    \"registeredStudentsIds\":\"\"\n}"
+				},
+				"url": {
+					"raw": "localhost:9001/course/",
+					"host": [
+						"localhost"
+					],
+					"port": "9001",
+					"path": [
+						"course",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get course by id - Direct",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9001/course/1",
+					"host": [
+						"localhost"
+					],
+					"port": "9001",
+					"path": [
+						"course",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add a new student - Direct",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"firstName\": \"Mohamed\",\n    \"lastName\": \"Shall\",\n    \"email\": \"mohamed.s.elshall2011@gmail.com\",\n    \"departmentId\": 1,\n    \"coursesIds\": \"\"\n}"
+				},
+				"url": {
+					"raw": "localhost:9002/student/",
+					"host": [
+						"localhost"
+					],
+					"port": "9002",
+					"path": [
+						"student",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get student by id- Direct",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9002/student/1",
+					"host": [
+						"localhost"
+					],
+					"port": "9002",
+					"path": [
+						"student",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add a new student - API Gateway",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"firstName\": \"Mohamed\",\n    \"lastName\": \"Shall\",\n    \"email\": \"mohamed.s.elshall2011@gmail.com\",\n    \"departmentId\": 1,\n    \"coursesIds\": \"\"\n}"
+				},
+				"url": {
+					"raw": "localhost:9191/student/",
+					"host": [
+						"localhost"
+					],
+					"port": "9191",
+					"path": [
+						"student",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get student by id - API Gateway",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9191/student/1",
+					"host": [
+						"localhost"
+					],
+					"port": "9191",
+					"path": [
+						"student",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add a new course - API Gateway",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"courseName\":\"First course\",\n    \"courseCode\":\"First code\",\n    \"registeredStudentsIds\":\"\"\n}"
+				},
+				"url": {
+					"raw": "localhost:9191/course/",
+					"host": [
+						"localhost"
+					],
+					"port": "9191",
+					"path": [
+						"course",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get course by id - API Gateway",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9191/course/1",
+					"host": [
+						"localhost"
+					],
+					"port": "9191",
+					"path": [
+						"course",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
